@@ -1,0 +1,69 @@
+.page {
+  min-width: 1280px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.page__title {
+  font-family: "Inter", Arial, sans-serif;
+  min-height: 43px;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 56px;
+  margin: 0;
+  white-space: nowrap;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.page__button {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 50%;
+  bottom: 50px;
+  background-image: url(../../images/message.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border-radius: 60px;
+  border: none;
+  outline: none;
+}
+
+.page__button:hover {
+  opacity: 0.9;
+}
+
+.page__button-tooltip {
+  width: 30px;
+  height: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: #000000;
+  background: #4ad0f1;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  visibility: hidden;
+}
+
+.page__button:hover .page__button-tooltip {
+  visibility: visible;
+}

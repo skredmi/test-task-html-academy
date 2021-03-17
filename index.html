@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>test-task</title>
+  </head>
+  <body class="page">
+    <h1 class="page__title">Лента новостей</h1>
+    <main class="content">
+      <section class="elements">
+        <ul class="elements__list"></ul>
+      </section>
+    </main>
+    <button class="page__button">
+      <span class="page__button-tooltip"></span>
+    </button>
+    <section class="popup">
+      <form class="popup__container">
+        <button class="popup__button-close" type="button"></button>
+        <h3 class="popup__title">Виджет</h3>
+        <section class="popup__elements">
+          <ul class="popup__list"></ul>
+        </section>
+      </form>
+    </section>
+    <template class="popup__content">
+      <li class="popup__item">
+        <p class="popup__item-title"></p>
+        <p class="popup__item-author"></p>
+        <p class="popup__item-date"></p>
+        <a class="popup__item-link" href="">Подробнее</a>
+        <p class="popup__item-status">Не прочитано</p>
+        <input class="popup__item-check" type="checkbox" />
+      </li>
+    </template>
+    <template class="elements-template">
+      <li class="elements__item">
+        <h3 class="elements__title"></h3>
+        <p class="elements__author"></p>
+        <a href="#" class="elements__link">Подробнее</a>
+        <p class="elements__date"></p>
+      </li>
+    </template>
+    <script src="scripts/initial-messages.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
